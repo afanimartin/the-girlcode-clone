@@ -107,6 +107,7 @@ section {
 }
 body {
   line-height: 1;
+  font-family: 'Lato', sans-serif;
 }
 ol,
 ul {
@@ -126,4 +127,181 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*
+	========================================
+	Grid
+	========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.two-cols {
+  width: 50%;
+}
+
+.three-cols {
+  width: 33.33%;
+}
+
+.two-cols, .three-cols {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.grid {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+.container, .container-720 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container-720 {
+  width: 720px;
+  margin: 0 auto;
+}
+
+/*
+  ========================================
+  Main header
+  ========================================
+*/
+main {
+  background-image: url("../images/hero-image.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  height: 680px;
+}
+
+header {
+  height: 80px;
+}
+
+header img {
+  height: 50px;
+  float: left;
+}
+
+.nav {
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.nav a {
+  margin: 0 16px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 180px;
+  color: #fff;
+}
+
+.hero .btn {
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  margin: 24px;
+  padding: 8px;
+  width: 160px;
+  height: 44px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  font-weight: bold;
+}
+
+.hero h3 {
+  margin-top: 32px;
+}
+
+/*
+	========================================
+	Typography
+	========================================
+*/
+h1 {
+  font-size: 44px;
+  line-height: 44px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+/*
+	========================================
+	Achievement
+	========================================
+*/
+.achievement {
+  text-align: center;
+}
+
+.container-720 {
+  width: 936px;
+}
+
+.three-cols h1 {
+  font-size: 64px;
+  color: #ee1e6d;
+}
+
+.three-cols h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: #666;
 }
